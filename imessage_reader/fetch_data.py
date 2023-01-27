@@ -30,6 +30,7 @@ class FetchData:
     SQL_CMD = (
         "SELECT "
         "text, "
+        "cache_roomnames, "
         "datetime((date / 1000000000) + 978307200, 'unixepoch', 'localtime'),"
         "handle.id, "
         "handle.service, "
